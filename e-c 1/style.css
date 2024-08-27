@@ -1,0 +1,356 @@
+:root {
+    --sand:#A28B55;
+    --deep_olive:#86AB89;
+    --light_olive:#CBE2B5;
+    --light_pista:#ddffdb;
+    --light_orange:#E8B86D;
+    --lightpastal:#FFFBE6;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color:#ffffff;
+}
+
+h1{
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+h2{
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+p{
+    letter-spacing: 1px;
+    font-family: 'Raleway';
+
+}
+logo{
+    font-family: 'Satisfy';
+    font-size: 2rem;
+
+}
+button{
+    font-family: 'Poppins';
+    padding: 4px 10px;
+    font-size: 1rem;
+    border: none;
+    background-color:#D5ED9F;
+    color:#ff6f00;
+    border-radius: 19px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 20px; 
+    gap: 2rem;
+    background:#E7FBE6;
+    cursor: pointer;
+    padding-top:15px ;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 3px 0px 5px #A28B55;
+    
+}
+
+nav ul{
+    display: flex;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+nav .mobile {
+    display: none;
+    align-items: center;
+}
+#nav1 #close{
+    display:none;
+}
+
+nav ul a{
+    text-decoration: none;
+    font-family: 'Raleway';
+    padding: 0px 10px;
+    font-size: 20px;
+    color: #603F26;
+
+}
+
+nav ul li{
+    text-decoration: none;
+    list-style: none;
+    transition: 1sec;
+
+}
+nav ul li:hover{
+    text-decoration: underline;
+    text-underline-offset:3px;
+    opacity: 0.8;
+}
+
+#hero{
+    background: url(images/hero\ image.webp);
+    background-size:cover ;
+    background-position: top 0% left 20%;
+    height: 93vh;
+}
+#hero .desc{
+    margin-top: 0;
+    color:#CBE2B5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    padding-top: 38vh ;
+    padding-left: 2rem;
+
+
+}
+#hero .desc h2{
+    margin: 0;
+    font-size: 3.5rem;
+}
+#hero .desc h1{
+    margin: 0;
+    font-size: 4.5rem;
+
+}
+#hero .desc h1 span{
+    color:#E7FBE6 ;
+}
+
+#hero .desc p{
+margin :0;
+font-size: 20px;
+padding-left: 11px;
+}
+#features {
+    background-color: #c86215;
+}
+
+#features .col1 img{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+#pro_head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+#pro_head h2{
+    padding: 3rem;
+    font-family: 'Satisfy';
+    font-weight: 400;
+    word-spacing: 4px;
+    font-size: 4rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color:#FF9100;
+    text-decoration-color:var(--light_orange) ;
+}
+
+#product{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap :3rem;
+    padding-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+#product .pro{
+    padding: 3rem 1rem;
+    background-color: var(--lightpastal);
+    padding: 18px 18px;
+    border-radius: 35px;
+    width: 40vh;
+    min-width: 300px;
+
+}
+#product .pro img{
+    width: 100%;
+    border-radius: 35px;
+    padding-top: 0;
+}
+#product .pro .desc1{
+    color:#ff6f00;
+}
+#product .pro .desc1 p{
+    font-family: 'Poppins';
+    font-weight:bold;
+    opacity: 0.3;
+}
+#product .pro .desc1 h1{
+    font-weight: 300;
+    word-spacing: 3px;
+}
+#product .pro .desc1 i{
+    color: rgb(255, 196, 47);
+}
+#product .pro .desc1 .buy{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    margin-top: 1.5rem;
+
+}
+#product .pro .desc1 .buy button{
+    padding: 13px;
+    cursor: pointer;
+    transition: 1sec;
+    color:black;
+    background-color: #FFCF9D;
+}
+#product .pro .desc1 .buy button:hover{
+    background-color:#f8a260 ;
+    color: rgb(255, 254, 254);
+    box-shadow: 3px 1px 8px #ebb286;
+}
+#product .pro .desc1 .buy i{
+    background: #FFCF9D;
+    color: black;
+    padding: 1rem;
+    border-radius: 100px;
+    margin-right: 1rem;
+    box-shadow: 3px 1px 4px #aabd7f;
+    cursor: pointer;
+    transition: 1sec;
+}
+#product .pro .desc1 .buy i:hover{
+    background: #f8a260;
+    color: white;
+    box-shadow: 3px 1px 8px #ebb286;
+
+}
+#foot-desc tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color: #ff6f00;
+    padding: 1.5rem 0;
+    font-family: 'Raleway';
+    font-size: 2rem;
+    color: white;
+    word-spacing: 4px;
+}
+#foot-desc p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Raleway';
+    font-weight: 300;
+    padding: 2rem 0;
+}
+#foot-desc p span{
+    font-weight: 500
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--light_orange);
+}
+footer h1{
+    padding-top: 1rem;
+    color:#20201f;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 2rem;
+}
+footer ul li{
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 1.5rem 0;
+    list-style: none;
+    transition: 11sec;
+}
+footer ul li:hover{
+    color: #d18100;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color:#d18100 ;
+}
+@media only screen and (max-width: 621px){
+
+    #nav1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 200px;
+        height:100vh;
+        background-color: #ddffdb;
+        position: fixed;
+        top: 0;
+        right:-200px;
+        padding: 2rem 0;
+        margin: 0;
+    }
+    #nav1.active{
+        right: 0px;
+    }
+    #nav1 #close{
+        display: flex;
+    }
+    nav ul li{
+        padding: .6rem 0;
+    }
+    nav ul li i{
+        padding-top: 11px;
+        padding-left: 11px;
+    }
+    nav .mobile {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    #hero .desc h2{
+        font-size: 1.5rem;
+    }
+    #hero .desc h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    #hero .desc p{
+        font-size: 1rem;
+    }
+    #pro_head h2{
+        font-size: 3rem;
+    }
+    #product .pro{
+        width: 10vh;
+        padding:10px 10px;
+    }
+    #foot-desc p{
+        font-size: 25px;
+        padding: 1rem ;
+    }
+    footer h1{
+        font-size: 20px;
+    }
+    footer ul li{
+        padding:15px 5px;
+    }
+}
+
+
+
+
+
+
